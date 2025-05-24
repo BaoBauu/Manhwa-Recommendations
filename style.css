@@ -7,6 +7,7 @@ h1 {
 }
 
 #header-img{
-  width: 110%;
+  width: 100%;
   height: auto;
+  margin: none;
 }
