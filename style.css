@@ -9,11 +9,10 @@ h1 {
 #header-img{
   width: 100%;
   height: auto;
-  overflow: hidden;
 }
 
 body {
-  background: linear-gradient( to bottom, #F8DE7E 30%, #ffffff 100%);
+  background: linear-gradient( to bottom, #F8DE7E 20%, #ffffff 100%);
 }
 
 img {
