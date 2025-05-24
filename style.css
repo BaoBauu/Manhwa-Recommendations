@@ -15,3 +15,7 @@ h1 {
 body {
   background: linear-gradient(to bottom, #F8DE7E, #ffffff);
 }
+
+img {
+  border: none;
+}
