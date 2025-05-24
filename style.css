@@ -9,5 +9,5 @@ h1 {
 #header-img {
   width: 100%;
   height: auto;
-  overflow: hide;
+  overflow: hidden;
 }
