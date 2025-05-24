@@ -5,3 +5,9 @@ h1 {
   font-weight: bold;
   text-align: center;
 }
+
+#header-img {
+  width: 100%;
+  height: auto;
+  overflow: hide;
+}
