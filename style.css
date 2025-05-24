@@ -13,7 +13,7 @@ h1 {
 }
 
 body {
-  background: linear-gradient(to bottom, #F8DE7E, #ffffff);
+  background: linear-gradient( to bottom, #F8DE7E 30%, #ffffff 100%);
 }
 
 img {
