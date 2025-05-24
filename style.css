@@ -10,12 +10,3 @@ h1 {
   width: 100%;
   height: auto;
 }
-
-body {
-  background: linear-gradient( to bottom, #F8DE7E 10%, #ffffff 100%);
-}
-
-img {
-  border: none;
-  box-shadow: none;
-}
