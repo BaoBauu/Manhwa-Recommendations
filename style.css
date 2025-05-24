@@ -11,3 +11,7 @@ h1 {
   height: auto;
   overflow: hidden;
 }
+
+body {
+  background: linear-gradient(to bottom, #F8DE7E, #ffffff);
+}
