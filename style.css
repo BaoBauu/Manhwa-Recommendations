@@ -1,13 +1,12 @@
 h1 {
   margin: 10px 10px 10px 10px;
   font-family: Sans-serif;
-  font-size: 70px;
-  font-weight: bold;
+  font-size: 60px;
+  font-weight: semi-bold;
   text-align: center;
 }
 
 #header-img{
   width: 100%;
   height: auto;
-  margin: 0px 0px 0px 0px;
 }
