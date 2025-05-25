@@ -1,6 +1,6 @@
 h1 {
   margin: 10px 10px 10px 10px;
-  font-family: Sans-serif;
+  font-family: Roboto;
   font-size: 60px;
   font-weight: semi-bold;
   text-align: center;
@@ -21,4 +21,9 @@ body {
   font-size: 30px;
   color: grey;
   text-align: center;
+}
+
+#intro{
+  font-family: sans-serif;
+  font-size: 16px;
 }
