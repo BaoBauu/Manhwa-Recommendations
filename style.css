@@ -18,7 +18,7 @@ body {
 
 #date{
   font-family: Sans-serif;
-  font-size: 21px;
+  font-size: 15px;
   color: grey;
   text-align: center;
 }
@@ -26,5 +26,5 @@ body {
 #intro{
   font-family: sans-serif;
   font-size: 16px;
-  margin: 20px 20px 20px 20px
+  margin: 30px 20px 30px 20px
 }
