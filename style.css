@@ -17,7 +17,8 @@ body {
 }
 
 #date{
-  margin: 0px 50px 0px 10px;
   font-family: Sans-serif;
   font-size: 10px;
+  color: grey;
+  text-align: center;
 }
