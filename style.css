@@ -38,3 +38,8 @@ body {
 #logo-container{
   border-bottom: 2px solid black;
 }
+
+h2 {
+  font-family: roboto;
+  text-align: center;
+}
