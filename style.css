@@ -54,3 +54,8 @@ ul {
   font-size: 16px;
   padding: 20px 20px 20px 35px;
 }
+
+#Eat-and-Go-Container{
+  border-top: 3px solid black;
+  border-bottom: 3px solid black 
+}
