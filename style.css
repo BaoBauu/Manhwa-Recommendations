@@ -48,3 +48,9 @@ a {
   color: black;
   text-decoration: none;
 }
+
+ul {
+  font-family: roboto;
+  font-size: 16px;
+  padding: 20px 20px 20px 20px;
+}
