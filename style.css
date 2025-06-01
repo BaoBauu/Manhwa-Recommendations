@@ -36,3 +36,7 @@ body {
   #genre_section{
     background: linear-gradient( to bottom, #3C235C 0%, #E9E3F7 100%);
   }
+
+h2 {
+  text-align: center;
+}
