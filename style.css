@@ -34,6 +34,7 @@
 body {
   padding: 0;
   margin: 0;
+  display: block;
 }
 
   #genre_section{
@@ -42,4 +43,5 @@ body {
 
 h1 {
   text-align: center;
+  
 }
