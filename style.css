@@ -79,11 +79,13 @@ h1 {
     justify-content: center;
     gap: 40px;
     max-width: 900px;
+    align-items: center;
+    flex-wrap: wrap;
   }
 
   .latest_img_con{
-    flex: 0 0 260px;
-    max-width: 260px;
+    flex: 1;
+    min-width: 260px;
     text-align: center;
     padding: 0;
     margin: 0;
