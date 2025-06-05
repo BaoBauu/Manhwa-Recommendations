@@ -65,7 +65,7 @@ h1 {
   padding: 0;
 }
 
-.newest_img{
+.latest_img{
   width: 100%;
   height: 180px;
   object-fit: cover;
@@ -81,7 +81,7 @@ h1 {
     max-width: 900px;
   }
 
-  .newest_img_con{
+  .latest_img_con{
     flex: 0 0 260px;
     max-width: 260px;
     text-align: center;
@@ -97,7 +97,7 @@ h1 {
     gap: 24px;
     max-width: 320px;
   }
-  .newest_img_con{
+  .latest_img_con{
     width: 100%;
     max-width: 320px;
     align-items: center;
