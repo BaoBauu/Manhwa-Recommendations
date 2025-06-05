@@ -74,7 +74,7 @@ h1 {
   box-shadow: 0 2px 12px rgba(0,0,0,0.06);
 }
   
-  #recommendation_img_con{
+  #recommendations_img_con{
     display: flex;
     justify-content: center;
     gap: 40px;
