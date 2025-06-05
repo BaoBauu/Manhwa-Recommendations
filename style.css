@@ -78,16 +78,16 @@ h1 {
     display: flex;
     justify-content: center;
     gap: 40px;
-    
+    max-width: 900px;
   }
 
   .newest_img_con{
-    flex: 1 1 0;
-    max-width: 280px;
+    flex: 0 0 260px;
+    max-width: 260px;
     text-align: center;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 40px 0;
+    padding: 0;
+    margin: 0;
+    background: none;
   }
 
  @media (max-width: 900px) {
@@ -95,9 +95,10 @@ h1 {
     flex-direction: column;
     align-items: center;
     gap: 24px;
+    max-width: 320px;
   }
   .newest_img_con{
-    width: 90vw;
+    width: 100%;
     max-width: 320px;
   }
  }
