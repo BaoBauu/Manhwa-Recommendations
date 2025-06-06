@@ -66,12 +66,10 @@ h1 {
 }
 
 .latest_img{
-  width: 100%;
-  height: 180px;
+  width: 250px;
+  height: auto;
   object-fit: cover;
-  border-radius: 8px;
   margin-bottom: 16px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
 }
   
   #recommendations_img_con{
@@ -81,6 +79,7 @@ h1 {
     max-width: 900px;
     align-items: center;
     flex-wrap: wrap;
+    margin: 0 auto;
   }
 
   .latest_img_con{
