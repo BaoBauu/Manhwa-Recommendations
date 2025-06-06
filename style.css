@@ -99,10 +99,12 @@ h1 {
     align-items: center;
     gap: 24px;
     max-width: 320px;
+    margin: 0;
   }
   .latest_img_con{
     width: 100%;
     max-width: 320px;
-    align-items: center;
+    display: flex;
+    justify-content: center;
   }
  }
