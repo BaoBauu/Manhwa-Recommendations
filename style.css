@@ -83,7 +83,7 @@ h1 {
     max-width: 900px;
     align-items: center;
     flex-wrap: wrap;
-    margin: 0 auto;
+    margin: 0;
   }
   
   .latest_img_con{
