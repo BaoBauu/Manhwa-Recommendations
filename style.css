@@ -81,6 +81,7 @@ h1 {
     flex-wrap: wrap;
     margin: 0 auto;
   }
+  
   .latest_img_con{
     flex: 1;
     max-width: 260px;
