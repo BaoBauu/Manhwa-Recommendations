@@ -91,7 +91,7 @@ h1 {
     background: none;
   }
 
- @media (max-width: 900px) {
+ @media (max-width: 600px) {
   #recommendations_img_con{
     display: flex;
     flex-direction: column;
