@@ -108,3 +108,7 @@ h1 {
     align-items: center;
   }
  }
+
+a {
+  text-decoration: none;
+}
