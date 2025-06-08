@@ -99,8 +99,7 @@ h1 {
     gap: 24px;
     max-width: 320px;
     margin: 0;
-    padding-left: 32px;
-    padding-right: 16px;
+    padding: 5px 16px 0 32px;
   }
   .latest_img_con{
     width: 100%;
