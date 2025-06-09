@@ -88,7 +88,7 @@ h1 {
   }
   
   .latest_img_con{
-    flex: 1;
+    flex: none;
     max-width: 260px;
     text-align: center;
     padding-left: 30px;
@@ -112,10 +112,11 @@ h1 {
     max-width: 320px;
     display: flex;
     align-items: center;
+    flex: none;
   }
    .latest_img{
-     width: 100%;
-     max-width: 320px;
+     max-width: 100%:
+     height: auto;object-fit: contain;
    }
    .latest_title{
      color: #794C9E;
