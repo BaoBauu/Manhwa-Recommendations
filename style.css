@@ -15,19 +15,19 @@
 
 @media (max-width: 1024px) {
   #hero_container{
-    display: block;
+  display: block;
   padding-bottom: 56px;
   margin: 0;
-    background-color: #000000;
+  background-color: #000000;
   }
   }
 
 @media (max-width: 600px) {
   #hero_container{
-    display: block;
+  display: block;
   padding-bottom: 32px;
   margin: 0;
-    background-color: #000000;
+  background-color: #000000;
   }
 }
   
@@ -38,23 +38,22 @@ body {
 }
 
 #genre_section{
-    background: linear-gradient( to bottom, #000000 0%, #000000 30%, #1A1A1A 100%);
-    padding: 0;
-    margin: 0;
+  background: linear-gradient( to bottom, #000000 0%, #000000 30%, #1A1A1A 100%);
+  margin: 0;
+  padding: 60px 0 0 0;
   }
-
-#genre_section{
-  padding-top: 60px;
-}
 
 @media (max-width: 1024px) {
   #genre_section{
     padding-top: 40px;
+    margin: 0;
   }
+}
 
 @media (max-width: 600px) {
   #genre_section{
     padding-top: 32px;
+    margin: 0;
   }
 }
     
