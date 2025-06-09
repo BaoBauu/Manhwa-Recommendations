@@ -37,7 +37,7 @@ body {
   display: block;
 }
 
-  #genre_section{
+#genre_section{
     background: linear-gradient( to bottom, #000000 0%, #000000 30%, #1A1A1A 100%);
     padding: 0;
     margin: 0;
