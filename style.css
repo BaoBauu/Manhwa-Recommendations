@@ -64,9 +64,10 @@ h1 {
   padding-bottom: 5px;
   color: #C8B3F6;
 }
-
+  
   .latest_title{
     color: #794C9E;
+    font-size: 200px;
   }
   
 .latest_img{
@@ -112,6 +113,9 @@ h1 {
     display: flex;
     align-items: center;
   }
+   .latest_title{
+    color: #794C9E;
+   }
  }
 
 a {
