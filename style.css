@@ -80,7 +80,8 @@ h1 {
     display: flex;
     justify-content: center;
     gap: 40px;
-    max-width: 900px;
+    max-width: 100%;
+    width: 100%;
     align-items: center;
     flex-wrap: wrap;
     margin: 0;
@@ -90,6 +91,7 @@ h1 {
   .latest_img_con{
     flex: none;
     max-width: 260px;
+    width: 100%;
     text-align: center;
     padding-left: 30px;
     padding-top: 15px;
