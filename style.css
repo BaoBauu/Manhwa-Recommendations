@@ -114,7 +114,8 @@ h1 {
     align-items: center;
   }
    .latest_title{
-    color: #794C9E;
+     color: #794C9E;
+     font-size: 25px;
    }
  }
 
