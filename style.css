@@ -72,7 +72,8 @@ h1 {
   }
   
 .latest_img{
-  max-width: 100%;
+  width: 100%;
+  max-width: 220px;
   height: auto;
   object-fit: contain;
   margin-bottom: 16px;
@@ -82,21 +83,22 @@ h1 {
     display: flex;
     flex-direction: row;
     gap: 40px;
-    max-width: 320px;
+    max-width: 960px;
     width: 100%;
-    align-items: center;
-    margin: 0;
+    align-items: flex-start;
+    margin: 0 auto;
     padding-top: 15px;
+    box-sizing: border-box;
   }
   
   .latest_img_con{
     display: flex;
-    flex: none;
-    max-width: 100%;
-    width: 100%;
-    margin: 0;
-    object-fit: contain;
+    flex-direction: column;
+    flex: 1 1 0px;
     align-items: center;
+    margin: 0;
+    min-width: 0;
+    box-sizing: border-box;
   }
 
  @media (max-width: 600px) {
