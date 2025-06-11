@@ -105,6 +105,7 @@ h1 {
   #recommendations_img_con{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     gap: 24px;
     max-width: 320px;
@@ -114,6 +115,7 @@ h1 {
     width: 100%;
     max-width: 100%;
     display: flex;
+    justify-content: center;
     object-fit: contain;
     align-items: center;
     flex: none;
