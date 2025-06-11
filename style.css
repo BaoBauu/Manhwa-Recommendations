@@ -41,18 +41,26 @@ body {
   background: linear-gradient( to bottom, #000000 0%, #000000 30%, #1A0042 100%);
   margin: 0;
   padding: 60px 0 0 0;
-  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   }
 
 @media (max-width: 1024px) {
   #genre_section{
     padding-top: 40px;
     margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
 @media (max-width: 600px) {
   #genre_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-top: 32px;
     margin: 0;
   }
