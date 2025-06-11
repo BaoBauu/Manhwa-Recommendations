@@ -86,6 +86,7 @@ h1 {
     max-width: 960px;
     width: 100%;
     align-items: flex-start;
+    justify-content: center;
     margin: 0 auto;
     padding-top: 15px;
     box-sizing: border-box;
