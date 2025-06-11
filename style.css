@@ -115,7 +115,7 @@ h1 {
   .latest_img_con{
     flex-direction: column;
     width: 100%;
-    max-width: 100%;
+    max-width: 320px;
     display: flex;
     justify-content: center;
     object-fit: contain;
