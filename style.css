@@ -111,9 +111,10 @@ h1 {
    #recommendations_img_con::-webkit-scrollbar {
     display: none;
    }
-  .latest_img_con {
-    min-width: 80vw;
-    max-width: 85vw;
+  .latest_img_con{
+    min-width: 75vw;
+    max-width: 75vw;
+    flex: 0 0 75vw;
     scroll-snap-align: center;
     border-radius: 16px;
     background: #fff;
@@ -135,4 +136,8 @@ h1 {
 
 a {
   text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
 }
