@@ -99,6 +99,7 @@ h1 {
 
  @media (max-width: 600px) {
   #recommendations_img_con{
+    padding-left: 8vw;
     display: flex;
     flex-direction: row;
     overflow-x: auto;
