@@ -1,30 +1,38 @@
 const carousel = document.getElementById('recommendations_img_con');
-const items = carousel.children;
+let itemWidth;
 
-const firstClone = items[0].cloneNode(true);
-const lastClone = items[items.length - 1].cloneNode(true);
+window.addEventListener('DOMContentLoaded', () => {
+  if (carousel.children.length === 0) return;
+  itemWidth = carousel.children[0].offsetWidth;
 
-carousel.insertBefore(lastClone, items[0]);
-carousel.appendChild(firstClone);
+  carousel.scrollLeft = itemWidth;
+});
 
-function setToFirst() {
-  const firstReal = carousel.children[1];
-  carousel.scrollLeft = firstReal.offsetLeft - carousel.offsetLeft;
+function moveFirstToEnd() {
+  carousel.appendChild(carousel.children[0]);
+  carousel.scrollLeft -= itemWidth;
 }
-window.addEventListener('DOMContentLoaded', setToFirst);
+
+function moveLastToStart() {
+  carousel.insertBefore(carousel.lastElementChild, carousel.children[0]);
+  carousel.scrollLeft += itemWidth;
+}
 
 carousel.addEventListener('scroll', () => {
-  const children = carousel.children;
-  const firstReal = children[1];
-  const lastReal = children[children.length - 2];
+  if (!itemWidth) return;
 
-  if (carousel.scrollLeft <= firstReal.offsetLeft - carousel.offsetLeft - 1) {
-      carousel.scrollLeft = lastReal.offsetLeft - carousel.offsetLeft;
+  while (carousel.scrollLeft >= itemWidth * 2) {
+    moveFirstToEnd();
   }
-    if (
-    carousel.scrollLeft >=
-    lastReal.offsetLeft - carousel.offsetLeft + lastReal.offsetWidth
-  ) {
-      carousel.scrollLeft = firstReal.offsetLeft - carousel.offsetLeft;
+  while (carousel.scrollLeft < itemWidth) {
+    moveLastToStart();
   }
 });
+
+window.carouselNext = function () {
+  carousel.scrollLeft += itemWidth;
+};
+
+window.carouselPrev = function () {
+  carousel.scrollLeft -= itemWidth;
+};
