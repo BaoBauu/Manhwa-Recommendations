@@ -72,6 +72,7 @@ h1 {
   height: auto;
   object-fit: contain;
   margin-bottom: 16px;
+  background-color: transparent;
 }
   
   #recommendations_img_con{
@@ -100,7 +101,7 @@ h1 {
   }
 
 .latest_img_con{
-  background-color: transparent;
+  background-color: white;
 }
 
  @media (max-width: 600px) {
