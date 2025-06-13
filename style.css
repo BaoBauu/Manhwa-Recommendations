@@ -102,6 +102,9 @@ h1 {
 
 .latest_img_con{
   background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
  @media (max-width: 600px) {
@@ -119,6 +122,7 @@ h1 {
     display: none;
    }
   .latest_con{
+    display: flex;
     min-width: 75vw;
     max-width: 75vw;
     flex: 0 0 75vw;
@@ -127,7 +131,6 @@ h1 {
     margin: 0;
     padding: 12px 0;
     align-items: center;
-    display: flex;
     flex-direction: column;
     justify-content: center;
   }
