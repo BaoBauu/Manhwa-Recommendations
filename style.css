@@ -87,7 +87,7 @@ h1 {
     box-sizing: border-box;
   }
   
-  .latest_img_con{
+  .latest_con{
     min-width: 33vw;
     display: flex;
     flex-direction: column;
@@ -114,7 +114,7 @@ h1 {
    #recommendations_img_con::-webkit-scrollbar {
     display: none;
    }
-  .latest_img_con{
+  .latest_con{
     min-width: 75vw;
     max-width: 75vw;
     flex: 0 0 75vw;
