@@ -141,6 +141,26 @@ h1 {
      color: #794C9E;
      font-size: 25px;
    }
+   #recommendations_img_con.carousel-shadow-left::before,
+#recommendations_img_con.carousel-shadow-right::after {
+  content: '';
+  position: absolute;
+  top: 0; bottom: 0;
+  width: 30px;
+  pointer-events: none;
+  z-index: 10;
+}
+#recommendations_img_con.carousel-shadow-left::before {
+  left: 0;
+  background: linear-gradient(to left, transparent, rgba(0,0,0,0.15));
+}
+#recommendations_img_con.carousel-shadow-right::after {
+  right: 0;
+  background: linear-gradient(to right, transparent, rgba(0,0,0,0.15));
+}
+#recommendations_img_con{
+  position: relative;
+}
  }
 
 a {
