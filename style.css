@@ -98,6 +98,10 @@ h1 {
     box-sizing: border-box;
   }
 
+.latest_img_con{
+  background-color: transparent;
+}
+
  @media (max-width: 600px) {
   #recommendations_img_con{
     scroll-padding-left: 110vw;
