@@ -1,62 +1,67 @@
 (function() {
   const carousel = document.getElementById('recommendations_img_con');
-  let itemWidth = 0;
-  let itemCount = 0;
-  let isTransitioning = false;
+  let items, itemCount, itemWidth, gap, busy = false;
 
   function isMobile() {
-    return window.matchMedia('(max-width: 600px)').matches;
+    return window.innerWidth <= 600;
   }
 
   function setupCarousel() {
-    if (!isMobile()) {
-      Array.from(carousel.querySelectorAll('.clone')).forEach(clone => clone.remove());
-      carousel.scrollLeft = 0;
-      return;
-    }
-
     Array.from(carousel.querySelectorAll('.clone')).forEach(clone => clone.remove());
 
-    const items = Array.from(carousel.querySelectorAll('.latest_con:not(.clone)'));
-    if (items.length === 0) return;
-
-    itemWidth = items[0].getBoundingClientRect().width + parseFloat(getComputedStyle(carousel).gap || 0);
+    items = Array.from(carousel.querySelectorAll('.latest_con:not(.clone)'));
     itemCount = items.length;
+    const style = getComputedStyle(carousel);
+    gap = parseFloat(style.gap || 0);
 
-    items.forEach(item => {
-      const clone = item.cloneNode(true);
-      clone.classList.add('clone');
-      carousel.appendChild(clone);
-    });
-    for (let i = items.length - 1; i >= 0; i--) {
-      const clone = items[i].cloneNode(true);
-      clone.classList.add('clone');
-      carousel.insertBefore(clone, carousel.firstChild);
+    if (isMobile() && itemCount > 0) {
+      items.forEach(item => {
+        const clone = item.cloneNode(true);
+        clone.classList.add('clone');
+        carousel.appendChild(clone);
+      });
+      for (let i = items.length - 1; i >= 0; i--) {
+        const clone = items[i].cloneNode(true);
+        clone.classList.add('clone');
+        carousel.insertBefore(clone, carousel.firstChild);
+      }
+
+      setTimeout(() => {
+        itemWidth = items[0].getBoundingClientRect().width + gap;
+        carousel.scrollLeft = itemWidth * itemCount;
+      }, 10);
+    } else {
+      carousel.scrollLeft = 0;
     }
-
-    carousel.scrollLeft = itemWidth * itemCount;
   }
 
-  function onScroll() {
-    if (!isMobile() || isTransitioning || itemWidth === 0) return;
+  function seamlessScroll() {
+    if (!isMobile() || busy || !itemWidth) return;
 
     const maxScroll = itemWidth * itemCount * 2;
-    if (carousel.scrollLeft < itemWidth * 0.5) {
-      isTransitioning = true;
-      carousel.scrollLeft = carousel.scrollLeft + itemWidth * itemCount;
-      setTimeout(() => { isTransitioning = false; }, 20);
-    } else if (carousel.scrollLeft > maxScroll - itemWidth * 0.5) {
-      isTransitioning = true;
+    if (carousel.scrollLeft >= maxScroll - itemWidth * 0.5) {
+      busy = true;
+      carousel.style.scrollBehavior = 'auto';
       carousel.scrollLeft = carousel.scrollLeft - itemWidth * itemCount;
-      setTimeout(() => { isTransitioning = false; }, 20);
+      setTimeout(() => {
+        carousel.style.scrollBehavior = 'smooth';
+        busy = false;
+      }, 20);
+    }
+    else if (carousel.scrollLeft <= itemWidth * 0.5) {
+      busy = true;
+      carousel.style.scrollBehavior = 'auto';
+      carousel.scrollLeft = carousel.scrollLeft + itemWidth * itemCount;
+      setTimeout(() => {
+        carousel.style.scrollBehavior = 'smooth';
+        busy = false;
+      }, 20);
     }
   }
 
   window.addEventListener('DOMContentLoaded', () => {
     setupCarousel();
-    carousel.addEventListener('scroll', onScroll, { passive: true });
-    window.addEventListener('resize', () => {
-      setupCarousel();
-    });
+    carousel.addEventListener('scroll', seamlessScroll, { passive: true });
+    window.addEventListener('resize', setupCarousel);
   });
 })();
