@@ -1,40 +1,62 @@
-const carousel = document.getElementById('recommendations_img_con');
-let itemWidth, totalSlides;
+(function() {
+  const carousel = document.getElementById('recommendations_img_con');
+  let itemWidth = 0;
+  let itemCount = 0;
+  let isTransitioning = false;
 
-function setupCarousel() {
-  Array.from(carousel.querySelectorAll('.clone')).forEach(clone => clone.remove());
-
-  const items = Array.from(carousel.children);
-  if (items.length === 0) return;
-
-  itemWidth = items[0].offsetWidth;
-  totalSlides = items.length;
-
-  const firstClone = items[0].cloneNode(true);
-  firstClone.classList.add('clone');
-  const lastClone = items[items.length - 1].cloneNode(true);
-  lastClone.classList.add('clone');
-
-  carousel.insertBefore(lastClone, items[0]);
-  carousel.appendChild(firstClone);
-
-  carousel.scrollLeft = itemWidth;
-}
-
-function onScroll() {
-  if (!itemWidth) return;
-  if (carousel.scrollLeft >= itemWidth * (totalSlides + 0.5)) {
-    carousel.style.scrollBehavior = 'auto';
-    carousel.scrollLeft = itemWidth;
+  function isMobile() {
+    return window.matchMedia('(max-width: 600px)').matches;
   }
-  if (carousel.scrollLeft <= 0.5 * itemWidth) {
-    carousel.style.scrollBehavior = 'auto';
-    carousel.scrollLeft = itemWidth * totalSlides;
-  }
-}
 
-window.addEventListener('DOMContentLoaded', () => {
-  setupCarousel();
-  carousel.addEventListener('scroll', onScroll, { passive: true });
-  window.addEventListener('resize', setupCarousel);
-});
+  function setupCarousel() {
+    if (!isMobile()) {
+      Array.from(carousel.querySelectorAll('.clone')).forEach(clone => clone.remove());
+      carousel.scrollLeft = 0;
+      return;
+    }
+
+    Array.from(carousel.querySelectorAll('.clone')).forEach(clone => clone.remove());
+
+    const items = Array.from(carousel.querySelectorAll('.latest_con:not(.clone)'));
+    if (items.length === 0) return;
+
+    itemWidth = items[0].getBoundingClientRect().width + parseFloat(getComputedStyle(carousel).gap || 0);
+    itemCount = items.length;
+
+    items.forEach(item => {
+      const clone = item.cloneNode(true);
+      clone.classList.add('clone');
+      carousel.appendChild(clone);
+    });
+    for (let i = items.length - 1; i >= 0; i--) {
+      const clone = items[i].cloneNode(true);
+      clone.classList.add('clone');
+      carousel.insertBefore(clone, carousel.firstChild);
+    }
+
+    carousel.scrollLeft = itemWidth * itemCount;
+  }
+
+  function onScroll() {
+    if (!isMobile() || isTransitioning || itemWidth === 0) return;
+
+    const maxScroll = itemWidth * itemCount * 2;
+    if (carousel.scrollLeft < itemWidth * 0.5) {
+      isTransitioning = true;
+      carousel.scrollLeft = carousel.scrollLeft + itemWidth * itemCount;
+      setTimeout(() => { isTransitioning = false; }, 20);
+    } else if (carousel.scrollLeft > maxScroll - itemWidth * 0.5) {
+      isTransitioning = true;
+      carousel.scrollLeft = carousel.scrollLeft - itemWidth * itemCount;
+      setTimeout(() => { isTransitioning = false; }, 20);
+    }
+  }
+
+  window.addEventListener('DOMContentLoaded', () => {
+    setupCarousel();
+    carousel.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', () => {
+      setupCarousel();
+    });
+  });
+})();
