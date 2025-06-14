@@ -1,67 +1,37 @@
 (function() {
   const carousel = document.getElementById('recommendations_img_con');
-  let items, itemCount, itemWidth, gap, busy = false;
-
-  function isMobile() {
-    return window.innerWidth <= 600;
-  }
+  let items = Array.from(carousel.children);
+  let itemCount = items.length;
+  let itemWidth, gap;
 
   function setupCarousel() {
-    Array.from(carousel.querySelectorAll('.clone')).forEach(clone => clone.remove());
-
-    items = Array.from(carousel.querySelectorAll('.latest_con:not(.clone)'));
-    itemCount = items.length;
     const style = getComputedStyle(carousel);
     gap = parseFloat(style.gap || 0);
+    itemWidth = items[0].getBoundingClientRect().width + gap;
 
-    if (isMobile() && itemCount > 0) {
-      items.forEach(item => {
-        const clone = item.cloneNode(true);
-        clone.classList.add('clone');
-        carousel.appendChild(clone);
-      });
-      for (let i = items.length - 1; i >= 0; i--) {
-        const clone = items[i].cloneNode(true);
-        clone.classList.add('clone');
-        carousel.insertBefore(clone, carousel.firstChild);
-      }
+    [...items].forEach(item => {
+      let cloneStart = item.cloneNode(true);
+      let cloneEnd = item.cloneNode(true);
+      cloneStart.classList.add('clone');
+      cloneEnd.classList.add('clone');
+      carousel.appendChild(cloneEnd);
+      carousel.insertBefore(cloneStart, carousel.firstChild);
+    });
 
-      setTimeout(() => {
-        itemWidth = items[0].getBoundingClientRect().width + gap;
-        carousel.scrollLeft = itemWidth * itemCount;
-      }, 10);
-    } else {
-      carousel.scrollLeft = 0;
-    }
+    carousel.scrollLeft = itemWidth * itemCount;
   }
 
   function seamlessScroll() {
-    if (!isMobile() || busy || !itemWidth) return;
+    let maxScroll = itemWidth * itemCount * 2;
 
-    const maxScroll = itemWidth * itemCount * 2;
-    if (carousel.scrollLeft >= maxScroll - itemWidth * 0.5) {
-      busy = true;
-      carousel.style.scrollBehavior = 'auto';
-      carousel.scrollLeft = carousel.scrollLeft - itemWidth * itemCount;
-      setTimeout(() => {
-        carousel.style.scrollBehavior = 'smooth';
-        busy = false;
-      }, 20);
-    }
-    else if (carousel.scrollLeft <= itemWidth * 0.5) {
-      busy = true;
-      carousel.style.scrollBehavior = 'auto';
-      carousel.scrollLeft = carousel.scrollLeft + itemWidth * itemCount;
-      setTimeout(() => {
-        carousel.style.scrollBehavior = 'smooth';
-        busy = false;
-      }, 20);
+    if (carousel.scrollLeft >= maxScroll - itemWidth) {
+      carousel.scrollTo({ left: itemWidth * itemCount, behavior: 'auto' });
+    } else if (carousel.scrollLeft <= itemWidth) {
+      carousel.scrollTo({ left: maxScroll - itemWidth * itemCount, behavior: 'auto' });
     }
   }
 
-  window.addEventListener('DOMContentLoaded', () => {
-    setupCarousel();
-    carousel.addEventListener('scroll', seamlessScroll, { passive: true });
-    window.addEventListener('resize', setupCarousel);
-  });
+  window.addEventListener('DOMContentLoaded', setupCarousel);
+  carousel.addEventListener('scroll', seamlessScroll);
+  window.addEventListener('resize', setupCarousel);
 })();
