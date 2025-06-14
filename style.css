@@ -111,14 +111,18 @@ h1 {
   #recommendations_img_con{
     display: flex;
     flex-direction: row;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
     gap: 16px;
     max-width: 100vw;
     padding-bottom: 16px;
     scrollbar-width: none;
-    scroll-behavior: smooth;
+    overflow: hidden;
+    position: relative;
+    animation: loopscroll 10s linear infinite;
   }
+   @keyframes loopScroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+   }
    #recommendations_img_con::-webkit-scrollbar {
     display: none;
    }
