@@ -1,4 +1,4 @@
-const slides = Array.from(document.querySelectorAll('#recommendationsimgcon .latest_con'));
+const slides = Array.from(document.querySelectorAll('#recommendations_img_con .latest_con'));
 const dots = Array.from(document.querySelectorAll('.indicators .dot'));
 let current = 0;
 
