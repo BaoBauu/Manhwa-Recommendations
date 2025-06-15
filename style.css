@@ -13,20 +13,20 @@
 
 @media (max-width: 1024px) {
   #hero_container{
-  padding-bottom: 56px;
-  margin: 0;
-  background-color: #1A0042;
+    padding-bottom: 56px;
+    margin: 0;
+    background-color: #1A0042;
   }
-  }
+}
 
 @media (max-width: 600px) {
   #hero_container{
-  padding-bottom: 32px;
-  margin: 0;
-  background-color: #1A0042;
+    padding-bottom: 32px;
+    margin: 0;
+    background-color: #1A0042;
   }
 }
-  
+
 body {
   padding: 0;
   margin: 0;
@@ -37,7 +37,7 @@ body {
   background: linear-gradient( to bottom, #1A0042 0%, #1A0042 30%, #B89AC9 100%);
   margin: 0;
   padding-top: 60px;
-  }
+}
 
 @media (max-width: 1024px) {
   #genre_section{
@@ -52,20 +52,20 @@ body {
     margin: 0;
   }
 }
-    
+
 h1 {
   text-align: center;
   margin: 0 auto;
   padding-bottom: 5px;
   color: #C8B3F6;
 }
-  
+
 .latest_title{
-    color: #794C9E;
-    font-size: 45px;
+  color: #794C9E;
+  font-size: 45px;
   object-fit: contain;
-  }
-  
+}
+
 .latest_img{
   width: 100%;
   max-width: 220px;
@@ -73,32 +73,32 @@ h1 {
   object-fit: contain;
   margin-bottom: 16px;
 }
-  
-  #recommendations_img_con{
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
-    max-width: 100vw;
-    width: 100%;
-    align-items: flex-start;
-    justify-content: center;
-    margin: 0 auto;
-    padding-top: 15px;
-    box-sizing: border-box;
-  }
-  
-  .latest_con{
-    min-width: 33vw;
-    display: flex;
-    flex-direction: column;
-    flex: none;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    min-width: 0;
-    box-sizing: border-box;
-    background-color: transparent;
-  }
+
+#recommendations_img_con{
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  max-width: 100vw;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 15px;
+  box-sizing: border-box;
+}
+
+.latest_con{
+  min-width: 33vw;
+  display: flex;
+  flex-direction: column;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  min-width: 0;
+  box-sizing: border-box;
+  background-color: transparent;
+}
 
 .latest_img_con{
   background-color: transparent;
@@ -107,7 +107,7 @@ h1 {
   align-items: center;
 }
 
- @media (max-width: 600px) {
+@media (max-width: 600px) {
   #recommendations_img_con{
     display: flex;
     flex-direction: row;
@@ -120,47 +120,62 @@ h1 {
     scroll-behavior: smooth;
     position: relative;
   }
-   #recommendations_img_con::-webkit-scrollbar {
+  #recommendations_img_con::-webkit-scrollbar {
     display: none;
-   }
+  }
   .latest_con{
-    display: flex;
-    min-width: 75vw;
-    max-width: 75vw;
-    flex: 0 0 75vw;
+    display: none;
+    min-width: 90vw;
+    max-width: 90vw;
+    flex: 0 0 90vw;
     scroll-snap-align: center;
     border-radius: 16px;
-    margin: 0;
+    margin: 0 auto;
     padding: 12px 0;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    background-color: transparent;
+    transition: opacity 0.3s;
+  }
+  .latest_con[style*="display: flex"] {
+    display: flex !important;
+    opacity: 1;
+    pointer-events: auto;
+    position: relative;
   }
   .latest_img{
     border-radius: 12px;
   }
-    .latest_title{
-     color: #402d5d;
-     font-size: 25px;
-     text-align: center;
-   }
-   .indicators{
-  display: flex;
-  justify-content: center;
-  margin-top: 16px;
-  gap: 8px;
+  .latest_title{
+    color: #402d5d;
+    font-size: 25px;
+    text-align: center;
+  }
+  .indicators{
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    gap: 8px;
+  }
+  .dot{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(50, 50, 50, 0.2);
+    transition: background 0.3s;
+    cursor: pointer;
+  }
+  .dot.active{
+    background: #794C9E;
+  }
 }
-.dot{
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: rgba(50, 50, 50, 0.2);
-  transition: background 0.3s;
-}
-.dot.active{
-  background: #794C9E; / Highlight color, adjust as needed /
-}
- }
 
 a {
   text-decoration: none;
