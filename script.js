@@ -37,7 +37,7 @@ document.addEventListener('keydown', (e) => {
 });
 
 let startX = null;
-const con = document.getElementById('recommendationsimgcon');
+const con = document.getElementById('recommendations_img_con');
 if (con) {
   con.addEventListener('touchstart', e => {
     if (!isMobile()) return;
