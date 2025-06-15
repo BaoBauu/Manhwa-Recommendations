@@ -184,3 +184,12 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 2px solid #BDC2FF;
+  background-color: #402d5d;
+}
