@@ -188,8 +188,12 @@ a {
 .buttons{
   margin: 20px auto;
   display: block;
-  border-radius: 10px;
   width: fit-content;
-  border: 2px solid #BDC2FF;
+}
+
+button{
   background-color: #402d5d;
+  border: 2px solid #BDC2FF;
+  border-radius: 10px;
+  color: #fff;
 }
