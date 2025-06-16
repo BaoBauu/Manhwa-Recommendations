@@ -186,11 +186,10 @@ a {
 }
 
 .buttons{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 20px auto;
+  display: block;
   border-radius: 10px;
+  width: fit-content;
   border: 2px solid #BDC2FF;
-  color: #402d5d;
-  width: 25vw;
+  background-color: #402d5d;
 }
