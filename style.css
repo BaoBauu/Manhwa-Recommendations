@@ -61,7 +61,7 @@ h1 {
 }
 
 .latest_title{
-  color: #794C9E;
+  color: #C29CE4;
   font-size: 45px;
   object-fit: contain;
 }
@@ -154,7 +154,7 @@ h1 {
     border-radius: 12px;
   }
   .latest_title{
-    color: #402d5d;
+    color: #C29CE4;
     font-size: 25px;
     text-align: center;
   }
