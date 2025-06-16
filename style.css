@@ -194,6 +194,9 @@ a {
 button{
   background-color: #402d5d;
   border: 2px solid #BDC2FF;
-  border-radius: 10px;
+  border-radius: 20px;
   color: #fff;
+  padding: 12px 32px;
+  font-size: 1.2rem;
+  transition: background 0.2s;
 }
