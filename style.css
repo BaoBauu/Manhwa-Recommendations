@@ -139,9 +139,6 @@ h1 {
     justify-content: center;
     opacity: 0;
     pointer-events: none;
-    position: absolute;
-    left: 0;
-    top: 0;
     box-sizing: border-box;
     background-color: transparent;
     transition: opacity 0.3s;
@@ -150,7 +147,6 @@ h1 {
     display: flex !important;
     opacity: 1;
     pointer-events: auto;
-    position: relative;
   }
   .latest_img{
     border-radius: 12px;
