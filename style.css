@@ -152,6 +152,9 @@ h1 {
   }
   .latest_img{
     border-radius: 12px;
+    max-width: 90vw;
+    width: 100%;
+    height: auto;
   }
   .latest_title{
     color: #C29CE4;
