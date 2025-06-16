@@ -155,11 +155,13 @@ h1 {
     max-width: 90vw;
     width: 100%;
     height: auto;
+    margin: 0 auto;
   }
   .latest_title{
     color: #C29CE4;
     font-size: 25px;
     text-align: center;
+    margin: 0 auto;
   }
   .indicators{
     display: flex;
