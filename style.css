@@ -164,7 +164,7 @@ h1 {
     font-size: 25px;
     text-align: center;
     margin: 0 auto;
-    padding-top: 5px;
+    padding-top: 10px;
   }
   .indicators{
     display: flex;
