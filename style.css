@@ -213,6 +213,8 @@ button{
 #popular_img{
   padding-left: 0;
   margin: 0 auto;
-  width: 100%
+  min-width: 60vw;
+  max-width: 60vw;
+  width: 100%;
   height: auto;
 }
