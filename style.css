@@ -207,7 +207,7 @@ button{
 }
 
 #popular{
-  background: linear-gradient( to right, #8569E4 60%, #C7AFF7 60%);
+  background: linear-gradient( to right, #8569E4 50%, #C7AFF7 50%);
 }
 
 #popular_img{
