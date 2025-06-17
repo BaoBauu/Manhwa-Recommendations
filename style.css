@@ -205,3 +205,14 @@ button{
   transition: background 0.2s;
   margin-bottom: 5px;
 }
+
+#popular{
+  background: linear-gradient( to right, #8569E4 20%, #C7AFF7 20%);
+}
+
+#popular_img{
+  padding-left: 0;
+  margin: 0 auto;
+  width: 100%
+  height: auto;
+}
