@@ -216,3 +216,10 @@ button{
   width: 60vw;
   height: auto;
 }
+
+#header{
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 5px;
+  color: #210635;
+}
