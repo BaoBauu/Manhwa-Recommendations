@@ -8,22 +8,18 @@
 #hero_container{
   padding-bottom: 5px;
   margin: 0;
-  background-color: #1A0042;
+  background-color: #2D1C7F
 }
 
 @media (max-width: 1024px) {
   #hero_container{
     padding-bottom: 45px;
-    margin: 0;
-    background-color: #1A0042;
   }
 }
 
 @media (max-width: 600px) {
   #hero_container{
     padding-bottom: 20px;
-    margin: 0;
-    background-color: #1A0042;
   }
 }
 
