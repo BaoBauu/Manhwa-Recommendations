@@ -34,7 +34,7 @@ body {
 }
 
 #genre_section{
-  background: linear-gradient( to bottom, #1A0042 0%, #1A0042 30%, #B89AC9 100%);
+  background-color: #1A0042
   margin: 0;
   padding-top: 60px;
 }
