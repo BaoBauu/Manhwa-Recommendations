@@ -6,14 +6,14 @@
 }
 
 #hero_container{
-  padding-bottom: 80px;
+  padding-bottom: 70px;
   margin: 0;
   background-color: #1A0042;
 }
 
 @media (max-width: 1024px) {
   #hero_container{
-    padding-bottom: 56px;
+    padding-bottom: 45px;
     margin: 0;
     background-color: #1A0042;
   }
@@ -21,7 +21,7 @@
 
 @media (max-width: 600px) {
   #hero_container{
-    padding-bottom: 29px;
+    padding-bottom: 20px;
     margin: 0;
     background-color: #1A0042;
   }
@@ -34,7 +34,7 @@ body {
 }
 
 #genre_section{
-  background-color: #1A0042
+  background-color: #1A0042;
   margin: 0;
   padding-top: 60px;
 }
