@@ -6,7 +6,7 @@
 }
 
 #hero_container{
-  padding-bottom: 70px;
+  padding-bottom: 5px;
   margin: 0;
   background-color: #1A0042;
 }
@@ -36,19 +36,19 @@ body {
 #genre_section{
   background-color: #1A0042;
   margin: 0;
-  padding-top: 60px;
+  padding-top: 50px;
 }
 
 @media (max-width: 1024px) {
   #genre_section{
-    padding-top: 40px;
+    padding-top: 30px;
     margin: 0;
   }
 }
 
 @media (max-width: 600px) {
   #genre_section{
-    padding-top: 32px;
+    padding-top: 22px;
     margin: 0;
   }
 }
