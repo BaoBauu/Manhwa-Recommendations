@@ -6,20 +6,20 @@
 }
 
 #hero_container{
-  padding-bottom: 5px;
+  padding-bottom: 45px;
   margin: 0;
-  background-color: #2D1C7F
+  background-color: #3E0866
 }
 
 @media (max-width: 1024px) {
   #hero_container{
-    padding-bottom: 45px;
+    padding-bottom: 35px;
   }
 }
 
 @media (max-width: 600px) {
   #hero_container{
-    padding-bottom: 20px;
+    padding-bottom: 10px;
   }
 }
 
@@ -30,21 +30,21 @@ body {
 }
 
 #genre_section{
-  background-color: #1A0042;
+  background-color: #3E0866;
   margin: 0;
-  padding-top: 50px;
+  padding-top: 40px;
 }
 
 @media (max-width: 1024px) {
   #genre_section{
-    padding-top: 30px;
+    padding-top: 20px;
     margin: 0;
   }
 }
 
 @media (max-width: 600px) {
   #genre_section{
-    padding-top: 22px;
+    padding-top: 12px;
     margin: 0;
   }
 }
