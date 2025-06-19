@@ -243,7 +243,7 @@ button{
 }
 
 .popular_img2{
-  padding: 50px 50px 50px 50px;
+  padding-right: 0;
   width: 60vw;
   height: auto;
 }
