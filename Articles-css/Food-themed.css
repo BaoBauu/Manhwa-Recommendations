@@ -6,6 +6,17 @@ h1 {
   text-align: center;
 }
 
+@media (max-width: 1024px) {
+  h1 {
+    padding: 5vw 5vw 5vw 5vw;
+    font-size: 10vw;
+  }
+  #intro{
+    font-size: 5vw;
+    padding: 5vw 5vw 5vw 5vw;
+  }
+}
+  
 #header-img{
   width: 100%;
   height: auto;
