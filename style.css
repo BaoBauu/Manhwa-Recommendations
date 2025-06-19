@@ -206,7 +206,7 @@ button{
   background: linear-gradient( to right, #60519b 50%, #1e202c 50%);
 }
 
-#popular_img{
+.popular_img{
   padding-left: 0;
   margin: 0 auto;
   width: 60vw;
