@@ -206,6 +206,7 @@ button{
 
 #popular{
   background: linear-gradient( to right, #60519b 50%, #1e202c 50%);
+  margin: 0;
 }
 
 .popular_img{
@@ -241,4 +242,8 @@ button{
   text-align: left;
   padding-bottom: 10vw;
 }
+}
+
+.popular_con{
+  margin: 0 auto;
 }
