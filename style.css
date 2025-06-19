@@ -1,3 +1,5 @@
+:root {
+  color-scheme: light;
 #hero_img{
   width: 100%;
   height: auto;
@@ -238,4 +240,5 @@ button{
   color: #C29CE4;
   text-align: left;
   padding-bottom: 10vw;
+}
 }
