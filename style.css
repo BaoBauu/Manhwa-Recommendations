@@ -9,6 +9,12 @@ background-color: black;
   height: auto;
 }
 
+#web_name{
+  width: 20vw;
+  font-family: cursive;
+  font-weight: 100px;
+}
+
 #hero_img{
   width: 100%;
   height: auto;
