@@ -229,10 +229,12 @@ button{
   padding-bottom: 10vw;
 }
 
+.popular_con{
+  margin: 0 auto;
+}
+
 .popular_img2{
-  padding-right: 0;
-  margin-left: auto;
-  margin-right: 0;
+  padding: 50px 50px 50px 50px;
   width: 60vw;
   height: auto;
 }
@@ -243,7 +245,7 @@ button{
   padding-bottom: 10vw;
 }
 
-.popular_con{
+.popular_con2{
   margin: 0 auto;
 }
 
