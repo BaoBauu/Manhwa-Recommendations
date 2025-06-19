@@ -221,8 +221,10 @@ button{
   color: #C8B3F6;
 }
 
+@media (max-width: 600px;) {
 .popular_title{
   color: #C29CE4;
   text-align: center;
   padding-bottom: 10vw;
+}
 }
