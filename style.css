@@ -241,3 +241,26 @@ button{
 .popular_con{
   margin: 0 auto;
 }
+
+@media (max-width: 600px) {
+  .popular-carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+  .popular-item {
+    flex: 0 0 80%;
+    margin-right: 16px;
+    scroll-snap-align: start;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  .popular-carousel {
+    scrollbar-width: none;
+  }
+  .popular-carousel::-webkit-scrollbar {
+    display: none;
+  }
+}
