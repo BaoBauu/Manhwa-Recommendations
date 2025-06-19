@@ -8,7 +8,7 @@
 #hero_container{
   padding-bottom: 45px;
   margin: 0;
-  background-color: #3E0866
+  background-color: #674EBC
 }
 
 @media (max-width: 1024px) {
@@ -30,7 +30,7 @@ body {
 }
 
 #genre_section{
-  background-color: #3E0866;
+  background-color: #674EBC;
   margin: 0;
   padding-top: 40px;
 }
