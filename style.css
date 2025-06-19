@@ -218,5 +218,11 @@ button{
   text-align: center;
   margin: 0 auto;
   padding-bottom: 10px;
-  color: #210635;
+  color: #C8B3F6;
+}
+
+.popular_title{
+  color: #C29CE4;
+  text-align: center;
+  padding-bottom: 10vw;
 }
