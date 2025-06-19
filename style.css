@@ -5,7 +5,7 @@ background-color: black;
 
 #logo{
   padding-left: 0;
-  width: 10vw;
+  width: 20vw;
   height: auto;
 }
 
@@ -219,7 +219,6 @@ button{
 }
 
 .popular_img{
-  padding-left: 0;
   margin: 0 auto;
   width: 60vw;
   height: auto;
@@ -235,33 +234,10 @@ button{
 
 .popular_title{
   color: #C29CE4;
-  text-align: right;
+  text-align: center;
   padding-bottom: 10vw;
 }
 
 .popular_con{
   margin: 0 auto;
-}
-
-.popular_img2{
-  padding-right: 0;
-  padding-left: 0;
-  width: 60vw;
-  height: auto;
-}
-
-.popular_title2{
-  color: #C29CE4;
-  text-align: left;
-  padding-bottom: 10vw;
-}
-
-.popular_con2{
-  margin: 0 auto;
-}
-
-#popular_title3{
-  color: #C29CE4;
-  text-align: right;
-  padding-bottom: 0;
 }
