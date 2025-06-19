@@ -12,7 +12,8 @@ background-color: black;
 #web_name{
   width: 20vw;
   font-family: cursive;
-  font-weight: 100px;
+  font-weight: 100;
+  color: white;
 }
 
 #hero_img{
