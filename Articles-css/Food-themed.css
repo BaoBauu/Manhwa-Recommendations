@@ -44,11 +44,30 @@ body {
   padding-left: 0;
   width: 20vw;
   height: 18vw;
+  padding-right: 1vw;
+  margin-right: 1vw;
 }
 
 #logo-container{
-  border-bottom: 2px solid black;
-  height: 200px;
+  background-color: black;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding-bottom: 18vw;
+}
+
+#web_name{
+  width: 20vw;
+  font-family: cursive;
+  font-weight: 400;
+  color: white;
+  padding-left: 0;
+  margin-left: 0;
 }
 
 h2 {
