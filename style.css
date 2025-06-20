@@ -37,7 +37,6 @@ background-color: black;
 }
 
 #hero_img{
-  margin-top: 18vw;
   width: 100%;
   height: auto;
   padding: 0;
@@ -45,6 +44,7 @@ background-color: black;
 }
 
 #hero_container{
+  margin-top: 18vw;
   padding-bottom: 45px;
   margin: 0;
   background-color: #60519b;
