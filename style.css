@@ -10,6 +10,8 @@ background-color: black;
   padding-left: 0;
   width: 20vw;
   height: auto;
+  padding-right: 1vw;
+  margin-right: 1vw;
 }
 
 #web_name{
@@ -255,13 +257,13 @@ button{
 }
 
 @media (max-width: 600px) {
-  .popular-carousel {
+  #popular-carousel{
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
   }
-  .popular-item {
+  .popular-con{
     flex: 0 0 80%;
     margin-right: 16px;
     scroll-snap-align: start;
@@ -269,10 +271,10 @@ button{
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   }
-  .popular-carousel {
+  #popular-carousel {
     scrollbar-width: none;
   }
-  .popular-carousel::-webkit-scrollbar {
+  #popular-carousel::-webkit-scrollbar {
     display: none;
   }
 }
