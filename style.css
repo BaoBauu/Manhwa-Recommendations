@@ -38,7 +38,7 @@ background-color: black;
 #hero_container{
   padding-bottom: 45px;
   margin: 0;
-  background-color: #31323e;
+  background-color: #60519b;
 }
 
 @media (max-width: 1024px) {
@@ -60,7 +60,7 @@ body {
 }
 
 #genre_section{
-  background-color: #31323e;
+  background-color: #60519b;
   margin: 0;
   padding-top: 40px;
 }
@@ -233,7 +233,7 @@ button{
 }
 
 #popular{
-  background: linear-gradient( to right, #60519b 50%, #1e202c 50%);
+  background-color: #1e202c;
   margin: 0;
 }
 
@@ -242,6 +242,7 @@ button{
   width: 60vw;
   height: auto;
   padding-left: 5vw;
+  padding-right: 1vw;
 }
 
 #header{
