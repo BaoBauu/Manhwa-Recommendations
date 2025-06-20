@@ -8,6 +8,7 @@ background-color: black;
   top: 0;
   left: 0;
   z-index: 1000;
+  padding-bottom: 18vw;
 }
 
 #logo{
@@ -240,6 +241,7 @@ button{
   margin: 0 auto;
   width: 60vw;
   height: auto;
+  padding-left: 5vw;
 }
 
 #header{
