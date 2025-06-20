@@ -3,7 +3,7 @@ background-color: black;
   max-width: 100%;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
@@ -28,7 +28,6 @@ background-color: black;
 }
 
 #search_bar{
-  display: block;
   padding: 2vw 4vw;
   border: 1px solid #ccc;
   border-radius: 4px;
