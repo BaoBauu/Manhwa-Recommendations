@@ -4,6 +4,10 @@ background-color: black;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
 #logo{
