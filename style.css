@@ -27,6 +27,12 @@ background-color: black;
   margin-left: 0;
 }
 
+#search_bar{
+  padding: 2vw 4vw;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
 #hero_img{
   margin-top: 18vw;
   width: 100%;
