@@ -257,6 +257,8 @@ button{
   color: #C29CE4;
   text-align: center;
   padding-bottom: 10vw;
+  padding-right: 1vw;
+  padding-left: 1vw;
 }
 
 .popular_con{
