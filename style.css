@@ -28,6 +28,7 @@ background-color: black;
 }
 
 #search_bar{
+  display: block;
   padding: 2vw 4vw;
   border: 1px solid #ccc;
   border-radius: 4px;
