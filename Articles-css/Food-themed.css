@@ -53,12 +53,11 @@ body {
   max-width: 100%;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
-  padding-bottom: 18vw;
 }
 
 #web_name{
