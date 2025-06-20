@@ -10,6 +10,12 @@ background-color: black;
   z-index: 1000;
 }
 
+#logo_rel{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
 #logo{
   padding-left: 0;
   width: 20vw;
