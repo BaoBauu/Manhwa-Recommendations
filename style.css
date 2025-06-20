@@ -9,7 +9,7 @@ background-color: black;
 #logo{
   padding-left: 0;
   width: 20vw;
-  height: auto;
+  height: 18vw;
   padding-right: 1vw;
   margin-right: 1vw;
 }
@@ -17,7 +17,7 @@ background-color: black;
 #web_name{
   width: 20vw;
   font-family: cursive;
-  font-weight: 300;
+  font-weight: 400;
   color: white;
   padding-left: 0;
   margin-left: 0;
