@@ -1,6 +1,6 @@
 #web_header{
 background-color: black;
-  max-width: 100%;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -20,14 +20,14 @@ background-color: black;
 
 #logo{
   padding-left: 0;
-  width: 20vw;
-  height: 17vw;
+  width: 17vw;
+  height: auto;
   padding-right: 1vw;
   margin-right: 1vw;
 }
 
 #web_name{
-  width: 20vw;
+  width: 17vw;
   font-family: cursive;
   font-weight: 1000;
   color: white;
@@ -54,14 +54,14 @@ background-color: black;
 
 #logo2{
   padding-left: 0;
-  width: 20vw;
-  height: 17vw;
+  width: 17vw;
+  height: auto;
   padding-right: 1vw;
   margin-right: 1vw;
 }
 
 #web_name2{
-  width: 20vw;
+  width: 17vw;
   font-family: cursive;
   font-weight: 1000;
   color: white;
