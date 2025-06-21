@@ -44,15 +44,15 @@ body {
   padding: 0;
   margin: 0;
   padding-left: 0;
-  width: 10vw;
-  height: 7vw;
+  width: 1vw;
+  height: auto;
   padding-right: 1vw;
   margin-right: 1vw;
 }
 
 .logo-container{
   background-color: black;
-  max-width: 100%;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -77,15 +77,15 @@ body {
   padding: 0;
   margin: 0;
   padding-left: 0;
-  width: 10vw;
-  height: 7vw;
+  width: 1vw;
+  height: auto;
   padding-right: 1vw;
   margin-right: 1vw;
 }
 
 .logo-container2{
   background-color: black;
-  max-width: 100%;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
