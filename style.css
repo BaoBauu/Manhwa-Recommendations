@@ -14,12 +14,14 @@ background-color: black;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  padding-right: 10vw;
+  margin-right: 10vw;
 }
 
 #logo{
   padding-left: 0;
   width: 20vw;
-  height: 16vw;
+  height: 17vw;
   padding-right: 1vw;
   margin-right: 1vw;
 }
@@ -51,7 +53,7 @@ background-color: black;
 #logo2{
   padding-left: 0;
   width: 20vw;
-  height: 16vw;
+  height: 17vw;
   padding-right: 1vw;
   margin-right: 1vw;
 }
@@ -271,7 +273,7 @@ button{
 }
 
 #popular{
-  background-color: #1e202c;
+  background-color: #000000;
   margin: 0;
 }
 
