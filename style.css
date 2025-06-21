@@ -20,14 +20,14 @@ background-color: black;
 
 #logo{
   padding-left: 0;
-  width: 17vw;
+  width: 14vw;
   height: auto;
   padding-right: 1vw;
   margin-right: 1vw;
 }
 
 #web_name{
-  width: 17vw;
+  width: 15vw;
   font-family: cursive;
   font-weight: 1000;
   color: white;
@@ -39,7 +39,7 @@ background-color: black;
   padding: 2vw 4vw;
   border: 1px solid #ccc;
   border-radius: 4px;
-  width: 20vw;
+  width: 30vw;
   height: auto;
 }
 
@@ -54,14 +54,14 @@ background-color: black;
 
 #logo2{
   padding-left: 0;
-  width: 17vw;
+  width: 14vw;
   height: auto;
   padding-right: 1vw;
   margin-right: 1vw;
 }
 
 #web_name2{
-  width: 17vw;
+  width: 15vw;
   font-family: cursive;
   font-weight: 1000;
   color: white;
