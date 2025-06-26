@@ -41,6 +41,11 @@ background-color: black;
   position: relative;
 }
 
+#search_icon{
+  width: 14vw;
+  height: auto;
+}
+
 #search_bar{
   display: none;
   transition: width 0.3s;
