@@ -55,3 +55,18 @@ if (con) {
 window.addEventListener('resize', () => showSlide(current));
 
 showSlide(current);
+
+const searchIcon = document.getElementById('search_icon');
+const searchBar = document.getElementById('search_bar');
+
+searchIcon.addEventListener('click', () => {
+  searchIcon.style.display = 'none';
+  searchBar.style.display = 'block';
+  searchBar.classList.add('active');
+  searchBar.focus();
+});
+searchBar.addEventListener('blur', () => {
+  searchBar.style.display = 'none';
+  searchBar.classList.remove('active');
+  searchIcon.style.display = 'block';
+});
