@@ -35,7 +35,15 @@ background-color: black;
   margin-left: 0;
 }
 
+#search_con{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
 #search_bar{
+  display: none;
+  transition: width 0.3s;
   padding: 2vw 4vw;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -43,6 +51,10 @@ background-color: black;
   height: auto;
 }
 
+#search_bar.active {
+  display: block;
+  width: 100vw;
+}
 
 #web_header2{
 background-color: black;
