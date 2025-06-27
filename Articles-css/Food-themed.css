@@ -71,14 +71,14 @@ background-color: black;
 
 #logo{
   padding-left: 0;
-  width: 14vw;
+  width: 10vw;
   height: auto;
   padding-right: 1vw;
   margin-right: 1vw;
 }
 
 #web_name{
-  width: 15vw;
+  width: 12vw;
   font-family: cursive;
   font-weight: 1000;
   color: white;
@@ -93,7 +93,7 @@ background-color: black;
 }
 
 #search_icon{
-  width: 19vw;
+  width: 13vw;
   height: auto;
 }
 
