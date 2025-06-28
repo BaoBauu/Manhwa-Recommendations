@@ -43,8 +43,8 @@ body {
 
 #intro{
   font-family: sans-serif;
-  font-size: 16px;
-  padding: 50px 50px 50px 50px
+  font-size: 16vw;
+  padding: 10vw 10vw 10vw 10vw;
 }
 
 #web_header{
