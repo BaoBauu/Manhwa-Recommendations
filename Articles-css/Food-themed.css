@@ -30,7 +30,7 @@
 }
 
 body {
-  padding-top: 20vw;
+  padding-top: 25vw;
   margin: 0;
   padding: 0;
 }
@@ -59,17 +59,20 @@ background-color: black;
   left: 0;
   z-index: 1000;
   overflow: hidden;
+  padding: 0;
 }
 
 #logo_rel{
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  padding: 0;
   padding-right: 10vw;
   margin-right: 10vw;
 }
 
 #logo{
+  padding: 0;
   padding-left: 0;
   width: 10vw;
   height: auto;
@@ -82,6 +85,7 @@ background-color: black;
   font-family: cursive;
   font-weight: 1000;
   color: white;
+  padding: 0;
   padding-left: 0;
   margin-left: 0;
 }
@@ -95,6 +99,7 @@ background-color: black;
 #search_icon{
   width: 13vw;
   height: auto;
+  padding: 0;
 }
 
 #search_bar{
