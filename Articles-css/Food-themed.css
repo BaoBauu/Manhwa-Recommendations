@@ -123,6 +123,31 @@ background-color: black;
   width: 100vw;
 }
 
+#web_header2{
+background-color: black;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#logo2{
+  padding-left: 0;
+  width: 14vw;
+  height: auto;
+  padding-right: 1vw;
+  margin-right: 1vw;
+}
+
+#web_name2{
+  width: 12vw;
+  font-family: cursive;
+  font-weight: 1000;
+  color: white;
+  padding-left: 0;
+  margin-left: 0;
+}
+
 h2 {
   font-family: roboto;
   text-align: center;
