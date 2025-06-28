@@ -60,6 +60,7 @@ background-color: black;
   z-index: 1000;
   overflow: hidden;
   padding: 0;
+  margin: 0;
 }
 
 #logo_rel{
@@ -67,12 +68,14 @@ background-color: black;
   align-items: center;
   justify-content: flex-start;
   padding: 0;
+  margin: 0;
   padding-right: 10vw;
   margin-right: 10vw;
 }
 
 #logo{
   padding: 0;
+  margin: 0;
   padding-left: 0;
   width: 10vw;
   height: auto;
@@ -86,6 +89,7 @@ background-color: black;
   font-weight: 1000;
   color: white;
   padding: 0;
+  margin: 0;
   padding-left: 0;
   margin-left: 0;
 }
@@ -94,12 +98,15 @@ background-color: black;
   display: flex;
   align-items: center;
   position: relative;
+  padding: 0;
+  margin: 0;
 }
 
 #search_icon{
   width: 13vw;
   height: auto;
   padding: 0;
+  margin: 0;
 }
 
 #search_bar{
