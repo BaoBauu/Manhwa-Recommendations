@@ -13,10 +13,10 @@
 @media (max-width: 1024px) {
   .art_title{
     padding: 5vw 5vw 5vw 5vw;
-    font-size: 10vw;
+    font-size: 25px;
   }
   #intro{
-    font-size: 0.000005vw;
+    font-size: 10px;
     padding: 5vw 5vw 5vw 5vw;
   }
 }
