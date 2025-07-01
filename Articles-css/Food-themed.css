@@ -20,7 +20,17 @@
     padding: 5vw 5vw 5vw 5vw;
   }
   .manhwa_review_con{
+    max-width: 100%;
+    height: auto;
   }
+  .manhwa-img{
+    wdith: 20vw;
+    height: auto;
+  }
+  .manhwa_img_con{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
   
 #header-img{
@@ -162,7 +172,7 @@ h2 {
 }
 
 a {
-  color: cyan;
+  color: light blue;
   text-decoration: none;
 }
 
