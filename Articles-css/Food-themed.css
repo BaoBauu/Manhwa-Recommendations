@@ -13,11 +13,13 @@
 @media (max-width: 1024px) {
   .art_title{
     padding: 5vw 5vw 5vw 5vw;
-    font-size: 39px;
+    font-size: 38px;
   }
   #intro{
     font-size: 17px;
     padding: 5vw 5vw 5vw 5vw;
+  }
+  .manhwa_review_con{
   }
 }
   
@@ -170,7 +172,7 @@ ul {
   padding: 30px 30px 30px 35px;
 }
 
-#Eat-and-Go-Container{
+.manhwa_review_con{
   border-top: 5px solid grey;
   border-bottom: 5px solid grey;
 }
