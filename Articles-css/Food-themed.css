@@ -192,3 +192,8 @@ ul {
   width: 50vw;
   height: auto;
 }
+
+.img+rating_con{
+  display: flex;
+  justify-content: flex-start;
+}
