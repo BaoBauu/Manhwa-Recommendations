@@ -200,12 +200,12 @@ ul {
 
 .rating_con{
   background-color: #e6e6e6;
-  border-radius: 30%;
+  border-radius: clamp(8px, 2vw, 20px);
 }
 
 .status{
   background-color: #D1FFBD;
-  border-radius: 30%;
+  border-radius: clamp(8px, 2vw, 20px);
 }
 
 .ed_rating_con{
