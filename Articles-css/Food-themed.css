@@ -196,6 +196,8 @@ ul {
 .img+rating_con{
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  flex-wrap: no-wrap;
+}
+
+.rating_con{
+  background-color: grey;
 }
