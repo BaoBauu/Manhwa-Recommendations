@@ -210,8 +210,14 @@ ul {
 
 .ed_rating_con{
   border-bottom: 2px solid #cccccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .user_rating_con{
   border-bottom: 2px solid #cccccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
