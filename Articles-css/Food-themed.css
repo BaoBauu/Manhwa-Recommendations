@@ -207,3 +207,11 @@ ul {
   background-color: #DIFFBD;
   border-radius: 15%;
 }
+
+.ed_rating_con{
+  border-bottom: 2px solid #cccccc;
+}
+
+.user_rating_con{
+  border-bottom: 2px solid #cccccc;
+}
