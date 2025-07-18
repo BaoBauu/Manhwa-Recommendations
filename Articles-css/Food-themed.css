@@ -193,7 +193,7 @@ ul {
   height: auto;
 }
 
-.img+rating_con{
+.imgNrating_con{
   display: flex;
   justify-content: space-between;
 }
