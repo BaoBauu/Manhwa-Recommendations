@@ -195,15 +195,15 @@ ul {
 
 .imgNrating_con{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .rating_con{
   background-color: #e6e6e6;
-  border-radius: 5%;
+  border-radius: 15%;
 }
 
 .status{
   background-color: #DIFFBD;
-  border-radius: 5%;
+  border-radius: 15%;
 }
