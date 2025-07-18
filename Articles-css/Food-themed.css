@@ -200,4 +200,10 @@ ul {
 
 .rating_con{
   background-color: grey;
+  border-radius: 20%;
+}
+
+.status{
+  background-color: light green;
+  border-radius: 20%;
 }
