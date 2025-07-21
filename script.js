@@ -70,3 +70,35 @@ searchBar.addEventListener('blur', () => {
   searchBar.classList.remove('active');
   searchIcon.style.display = 'block';
 });
+
+
+let selectedRating = 0;
+const stars = document.querySelectorAll('.star');
+const feedback = document.getElementById('rating-feedback');
+const submitBtn = document.getElementById('submit-rating');
+
+stars.forEach(star => {
+  star.addEventListener('click', () => {
+    selectedRating = parseInt(star.dataset.value);
+    stars.forEach(s => s.classList.remove('selected'));
+    for (let i = 0; i < selectedRating; i++) {
+      stars[i].classList.add('selected');
+    }
+  });
+});
+
+submitBtn.addEventListener('click', () => {
+  if (selectedRating === 0) {
+    feedback.textContent = "Please select a rating before submitting.";
+    return;
+  }
+
+  let userCount = 10; // simulate existing reviews
+  let currentAvg = 8.4; // simulate current average
+  let newTotal = (currentAvg * userCount + selectedRating);
+  userCount += 1;
+  let newAvg = (newTotal / userCount).toFixed(1);
+
+  document.querySelector('.user_rating_con p:last-child').textContent = `${newAvg}/10`;
+  feedback.textContent = `Thanks! ${userCount} users have rated this manhwa.`;
+});
