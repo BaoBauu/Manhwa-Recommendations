@@ -193,13 +193,16 @@ ul {
   border-radius: clamp(8px, 2vw, 20px);
 }
 
-.status{
+.status {
   background-color: #D1FFBD;
-  border-radius: clamp(8px, 2vw, 20px);
+  border-radius: clamp(12px, 4vw, 30px);
   display: inline-block;
-  padding: clamp(0.5rem, 2vw, 1rem);
-  margin-top: 2vw;
-  margin-bottom: 2vw;
+  padding: clamp(0.3rem, 1vw, 0.8rem) clamp(1rem, 3vw, 2rem);
+  margin: clamp(1rem, 3vw, 2rem) auto;
+  font-weight: 600;
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
+  text-align: center;
+  color: #222;
 }
 
 .ed_rating_con{
