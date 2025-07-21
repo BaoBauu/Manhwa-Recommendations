@@ -2,36 +2,12 @@
   box-sizing: border-box;
 }
 
-.art_title{
-  padding: 50px 50px 50px 50px;
-  font-family: Roboto;
-  font-size: 60px;
-  font-weight: semi-bold;
+.art_title {
+  font-size: clamp(2rem, 6vw, 4rem);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
   text-align: center;
-}
-
-@media (max-width: 1024px) {
-  .art_title{
-    padding: 5vw 5vw 5vw 5vw;
-    font-size: 38px;
-  }
-  #intro{
-    font-size: 17px;
-    padding: 5vw 5vw 5vw 5vw;
-  }
-  .manhwa_review_con{
-    max-width: 100%;
-    height: auto;
-  }
-  .manhwa-img{
-    wdith: 15vw;
-    height: auto;
-  }
-  .manhwa_img_con{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-  }
+  padding: clamp(1rem, 5vw, 3rem);
 }
   
 #header-img{
@@ -54,9 +30,14 @@ body {
   text-align: center;
 }
 
-#intro{
-  font-family: sans-serif;
-  padding: 10vw 10vw 10vw 10vw;
+#intro {
+  font-family: 'Roboto', sans-serif;
+  font-size: clamp(1rem, 2.2vw, 1.5rem);
+  line-height: 1.6;
+  padding: clamp(1rem, 5vw, 3rem);
+  color: #333;
+  max-width: 85ch; /* limits ultra-wide line length for comfort */
+  margin: auto;
 }
 
 #web_header{
@@ -183,14 +164,25 @@ ul {
   padding: 30px 30px 30px 35px;
 }
 
-.manhwa_review_con{
+.manhwa_review_con {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   border-top: 5px solid grey;
   border-bottom: 5px solid grey;
+  border-radius: clamp(10px, 2vw, 20px);
+  padding: clamp(1rem, 5vw, 3rem);
+  background-color: #fdfdfd;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  margin-top: 2vw;
+  margin-bottom: 2vw;
 }
 
-.manhwa-img{
-  width: 50vw;
+.manhwa-img {
+  width: 100%;
+  max-width: clamp(200px, 50vw, 400px);
   height: auto;
+  border-radius: 10px;
 }
 
 .imgNrating_con{
