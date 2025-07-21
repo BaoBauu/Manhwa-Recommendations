@@ -73,32 +73,38 @@ searchBar.addEventListener('blur', () => {
 
 
 let selectedRating = 0;
+let hasRated = false;
+
 const stars = document.querySelectorAll('.star');
 const feedback = document.getElementById('rating-feedback');
 const submitBtn = document.getElementById('submit-rating');
 
-stars.forEach(star => {
+stars.forEach((star, index) => {
   star.addEventListener('click', () => {
     selectedRating = parseInt(star.dataset.value);
-    stars.forEach(s => s.classList.remove('selected'));
-    for (let i = 0; i < selectedRating; i++) {
-      stars[i].classList.add('selected');
-    }
+    stars.forEach((s, i) => {
+      s.classList.toggle('selected', i < selectedRating);
+    });
   });
 });
 
 submitBtn.addEventListener('click', () => {
+  if (hasRated) {
+    feedback.textContent = "You've already submitted a rating. Thank you!";
+    return;
+  }
   if (selectedRating === 0) {
-    feedback.textContent = "Please select a rating before submitting.";
+    feedback.textContent = "Please select a rating first!";
     return;
   }
 
-  let userCount = 10; // simulate existing reviews
-  let currentAvg = 8.4; // simulate current average
+  let userCount = 10;
+  let currentAvg = 8.4;
   let newTotal = (currentAvg * userCount + selectedRating);
   userCount += 1;
   let newAvg = (newTotal / userCount).toFixed(1);
 
   document.querySelector('.user_rating_con p:last-child').textContent = `${newAvg}/10`;
   feedback.textContent = `Thanks! ${userCount} users have rated this manhwa.`;
+  hasRated = true;
 });
