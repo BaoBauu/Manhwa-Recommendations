@@ -227,3 +227,66 @@ ul {
   align-items: center;
   padding: 2vw;
 }
+
+.review-section {
+  display: grid;
+  gap: 2vw;
+  margin-top: 2vw;
+}
+
+.review-block {
+  background-color: #f9f9f9;
+  padding: 1.5vw;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.ratings-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2vw;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.ratings-table th, .ratings-table td {
+  border: 1px solid #ccc;
+  padding: 1vw;
+  text-align: center;
+}
+
+.ratings-table tr:nth-child(even) {
+  background-color: #f0f0f0;
+}
+
+.ratings-table tr:hover {
+  background-color: #d4f7d4;
+}
+
+.user-rating-section {
+  margin-top: 2vw;
+  background-color: #f8f8f8;
+  padding: 1.5vw;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.star-rating {
+  display: inline-block;
+}
+
+.star-rating .star {
+  font-size: 2rem;
+  cursor: pointer;
+  color: #ccc;
+  margin: 0 0.2vw;
+  transition: transform 0.2s ease;
+}
+
+.star-rating .star.selected {
+  color: gold;
+}
+
+.star-rating .star:hover {
+  color: orange;
+  transform: scale(1.2);
+}
