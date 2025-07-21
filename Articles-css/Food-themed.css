@@ -165,17 +165,15 @@ ul {
 }
 
 .manhwa_review_con {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  display: block;
+  max-width: 1200px;
+  margin: clamp(1rem, 5vw, 3rem) auto;
   border-top: 5px solid grey;
   border-bottom: 5px solid grey;
   border-radius: clamp(10px, 2vw, 20px);
   padding: clamp(1rem, 5vw, 3rem);
   background-color: #fdfdfd;
   box-shadow: 0 0 10px rgba(0,0,0,0.05);
-  margin-top: 2vw;
-  margin-bottom: 2vw;
 }
 
 .manhwa-img {
