@@ -283,3 +283,29 @@ ul {
   color: orange;
   transform: scale(1.2);
 }
+
+.credit_con {
+  display: flex;
+  justify-content: space-between;
+  gap: clamp(1rem, 3vw, 2rem);
+  padding: clamp(1rem, 4vw, 2rem);
+  border-bottom: 4px solid #E8E9EB;
+}
+
+.credit_block {
+  flex: 1;
+  text-align: center;
+}
+
+.credit_block .label {
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.4rem;
+}
+
+.credit_block .name {
+  font-size: clamp(1rem, 2vw, 1.4rem);
+  font-weight: 500;
+  color: #555;
+}
