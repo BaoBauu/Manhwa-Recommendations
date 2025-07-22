@@ -36,7 +36,7 @@ body {
   line-height: 1.6;
   padding: clamp(1rem, 5vw, 3rem);
   color: #333;
-  max-width: 85ch; /* limits ultra-wide line length for comfort */
+  max-width: 85ch;
   margin: auto;
 }
 
@@ -196,7 +196,6 @@ ul {
   background-color: #e6e6e6;
   border-radius: clamp(8px, 2vw, 20px);
   padding-bottom: 1rem;
-  overflow: hidden;
 }
 
 .status_wrap {
