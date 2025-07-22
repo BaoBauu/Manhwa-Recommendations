@@ -192,7 +192,7 @@ ul {
 
 .rating_con {
   flex: 1;
-  max-width: 80%;
+  max-width: 99%;
   background-color: #e6e6e6;
   border-radius: clamp(8px, 2vw, 20px);
   padding-bottom: 1rem;
