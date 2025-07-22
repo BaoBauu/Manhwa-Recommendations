@@ -197,12 +197,18 @@ ul {
   background-color: #D1FFBD;
   border-radius: clamp(12px, 4vw, 30px);
   display: inline-block;
-  padding: clamp(0.3rem, 1vw, 0.8rem) clamp(1rem, 3vw, 2rem);
-  margin: clamp(1rem, 3vw, 2rem) auto;
+  padding: clamp(0.5rem, 1vw, 1rem) clamp(1rem, 3vw, 2rem);
   font-weight: 600;
   font-size: clamp(0.9rem, 2vw, 1.2rem);
   text-align: center;
   color: #222;
+}
+
+.status .chapters {
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  color: #444;
+  font-weight: 500;
+  margin-top: 0.3rem;
 }
 
 .ed_rating_con{
