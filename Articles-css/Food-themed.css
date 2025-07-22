@@ -188,9 +188,13 @@ ul {
   justify-content: space-evenly;
 }
 
-.rating_con{
+.rating_con {
+  flex: 1;
+  max-width: 65%;
   background-color: #e6e6e6;
   border-radius: clamp(8px, 2vw, 20px);
+  padding-bottom: 1rem;
+  overflow: hidden;
 }
 
 .status_wrap {
