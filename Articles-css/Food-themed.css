@@ -241,7 +241,7 @@ ul {
 }
 
 .ratings-table {
-  width: 95%;
+  width: 100%;
   border-collapse: collapse;
   margin-top: 2vw;
   margin: clamp(1rem, 3vw, 2rem) auto;
