@@ -193,22 +193,22 @@ ul {
   border-radius: clamp(8px, 2vw, 20px);
 }
 
-.status {
-  background-color: #D1FFBD;
-  border-radius: clamp(12px, 4vw, 30px);
-  display: inline-block;
-  padding: clamp(0.5rem, 1vw, 1rem) clamp(1rem, 3vw, 2rem);
-  font-weight: 600;
-  font-size: clamp(0.9rem, 2vw, 1.2rem);
-  text-align: center;
-  color: #222;
+.status_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(0.5rem, 2vw, 1.5rem);
+  margin: clamp(1rem, 3vw, 2rem) auto;
 }
 
-.status .chapters {
-  font-size: clamp(0.8rem, 2vw, 1rem);
-  color: #444;
-  font-weight: 500;
-  margin-top: 0.3rem;
+.status_tag, .chapter_tag {
+  background-color: #D1FFBD;
+  border-radius: 1000px;
+  padding: 0.5rem 1.2rem;
+  font-weight: 600;
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
+  color: #222;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.05);
 }
 
 .ed_rating_con{
