@@ -96,7 +96,7 @@ background-color: black;
 }
 
 #search_icon{
-  width: 15vw;
+  width: 10vw;
   height: auto;
   padding: 0;
   margin: 0;
@@ -132,14 +132,15 @@ background-color: black;
   padding: 0;
   margin: 0;
   padding-left: 0;
-  width: 14vw;
+  width: 5vw;
   height: auto;
   padding-right: 1vw;
   margin-right: 1vw;
 }
 
 #web_name2{
-  width: 12vw;
+  width: 10vw;
+  height: auto;
   font-family: cursive;
   font-weight: 1000;
   color: white;
